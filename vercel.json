@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      source: "/blog/(.*)",
-      destination: "https://vercel-test.ghost.io/blog/$1"
+      "source": "/blog/(.*)",
+      "destination": "https://vercel-test.ghost.io/blog/$1"
     }
   ]
 }
