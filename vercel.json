@@ -7,7 +7,7 @@
   ],
   "headers": [
     {
-      "source": "/blog/*",
+      "source": "/blog(.*)",
       "headers" : [
         {
           "key" : "X-Forwarded-Host",
