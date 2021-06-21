@@ -4,5 +4,15 @@
       "source": "/blog/(.*)",
       "destination": "https://vercel-test.ghost.io/blog/$1"
     }
-  ]
+  ],
+  "headers": [
+    {
+      "source": "/blog/*",
+      "headers" : [
+        {
+          "key" : "X-Forwarded-Host",
+          "value" : "vercel.hannah.wf"
+        }
+      ]
+    }
 }
