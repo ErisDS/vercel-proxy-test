@@ -10,7 +10,10 @@
       {
         "source": "/journal/:path*",
         "headers": [
-          { key: "x-forwarded-host", value: "next-proxy-test.vercel.app" }
+          { 
+            "key": "x-forwarded-host", 
+            "value": "next-proxy-test.vercel.app" 
+          }
         ],
       }
     ]
