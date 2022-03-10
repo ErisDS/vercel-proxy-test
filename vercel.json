@@ -2,13 +2,13 @@
   "trailingSlash":true,
   "rewrites": [    
     {
-      "source": "/journal/:match*", 
-      "destination": "https://next-proxy-test.ghost.io/journal/:match*" 
+      "source": "/blog/:match*", 
+      "destination": "https://vercel-test.ghost.io/blog/:match*" 
     }
   ],
   "headers": [
     {
-      "source": "/journal/:path*",
+      "source": "/blog/:path*",
       "headers": [
         { 
           "key": "x-forwarded-host", 
