@@ -6,7 +6,7 @@
       "destination": "https://next-proxy-test.ghost.io/journal/:match*" 
     }
   ],
-  "headers: [
+  "headers": [
       {
         "source": "/journal/:path*",
         "headers": [
