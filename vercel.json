@@ -1,12 +1,18 @@
 {
-  "redirects": [
+  "trailingSlash":true,
+  "rewrites": [    
     {
-      "source": "/blog",
-      "destination": "https://vercel-test.ghost.io/blog/"
-    },
-    {
-      "source": "/blog/(.*)",
-      "destination": "https://vercel-test.ghost.io/blog/$1"
+      "source": "/journal/:match*", 
+      "destination": "https://next-proxy-test.ghost.io/journal/:match*" 
     }
+  ],
+  "headers: [
+      {
+        "source": "/journal/:path*",
+        "headers": [
+          { key: "x-forwarded-host", value: "next-proxy-test.vercel.app" }
+        ],
+      }
+    ]
   ]
 }
